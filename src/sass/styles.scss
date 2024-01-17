@@ -1,0 +1,185 @@
+@import "./variables";
+
+* {
+  scroll-behavior: smooth;
+  color: beige;
+}
+
+// body {
+//   height: 100vh;
+// }
+
+#root {
+  // height: 100%;
+  min-width: min-content;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  a {
+    color: $primary_color;
+    text-decoration: none;
+    transition: .2s ease-in-out;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    &:hover {
+      letter-spacing: 2px;
+    }
+    &.active {
+      color: #5d5656;
+      letter-spacing: 2px;
+    }
+  }
+  padding: 1em 0;
+}
+
+.breadcrumb {
+  display: flex;
+  padding: 0;
+
+  & li {
+    list-style: none;
+    text-transform: capitalize;
+    margin: 0 2px;
+    a {
+      text-decoration: none;
+      transition: .2s ease-in-out;
+    }
+    a:hover {
+      color: tomato;
+    }
+    &:not(:first-child):before {content: "/ "}
+    }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  
+
+  background: linear-gradient(180deg, rgb(30, 29, 29), rgb(11, 9, 14));
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  ::selection {
+    background-color: $primary_color;
+    color: white;
+  }
+  > div:not(.project) {
+    min-height: 89.2vh;
+    display: flex;
+    // justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex: 1 0 auto;
+    align-items: center;
+  }
+  img, .headerImage {
+    border-radius: 1em;
+  }
+}
+.portfolio {
+  display: flex;
+  flex-direction: column;
+}
+
+.para {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pointer {
+  color: white;
+}
+
+section {
+  max-width: 639px;
+}
+
+footer {
+  display: flex;
+  flex: 0 1 auto;
+  width: 100%;
+  min-height: 5vh;
+}
+
+footer ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: stretch;
+  justify-content: space-between;
+  li {
+    color: white;
+    display: flex;
+    &:last-child {
+      margin-right: 2em;
+    }
+  }
+}
+
+.projects {
+  display: flex;
+  align-items: center;
+  > div {
+    display: flex;
+    justify-content: center;
+    
+    a {text-decoration: none;}
+    
+  }
+
+  .projectcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+
+  }
+  .projectCard {
+    display: flex;
+    flex-direction: column;
+    transition: .2s ease-in-out;
+    
+    &:hover {
+      transform: scale(102%);
+    }
+    
+    & img {
+      background-repeat: no-repeat;
+      background-size: cover;
+      object-fit: cover;
+      width: 98vh;
+      max-width: 800px;
+      border-radius: 1em;
+    }
+    
+    .projectInfo {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      h3, h4 {
+        color: beige;
+      }
+    }
+  }
+  transition: .2s ease-in-out;
+}
+
+@media screen and (max-width: 530px) {
+  .projects .projectCard img {
+    max-width: 400px;
+  }
+  .projects .projectCard .projectInfo {
+    flex-direction: column;
+    h4 {
+      display: none;
+    }
+  }
+}
