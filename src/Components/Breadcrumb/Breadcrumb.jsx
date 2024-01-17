@@ -47,48 +47,6 @@ export default function Breadcrumb() {
           {projectPath}
         </li>
       }
-
-      {/* {splitPath
-      ? 
-        <li>
-          <NavLink
-          to="/"
-          className={({isActive, isPending}) =>
-          isPending ? "pending" : isActive ? "active" : ""}
-          >Home
-          </NavLink>
-        </li>
-      : 
-      <li>
-        <NavLink
-         to="/"
-         className={({isActive, isPending}) =>
-         isPending ? "pending" : isActive ? "active" : ""}
-         >Home
-        </NavLink>
-      </li>}
-      {!splitPath ? null : 
-        <li>
-          <NavLink
-          to={`/${splitPath[1]}`}
-          className={({isActive, isPending}) =>
-          isPending ? "pending" : isActive ? "active" : ""}
-          >
-          </NavLink>
-        </li>
-        }
-      {projectPath} */}
     </ul>
   )
 }
-
-
-
-{/* <li>
-<NavLink
-to={`/${splitPath[1]}`}
-className={({isActive, isPending}) =>
-isPending ? "pending" : isActive ? "active" : ""}
->{splitPath[1]}
-</NavLink>
-</li> */}

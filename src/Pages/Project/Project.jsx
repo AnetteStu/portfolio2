@@ -8,7 +8,7 @@ export default function Project() {
     <div>
     <Breadcrumb/>
       <div>
-        <img src={state.data.image}/>
+        <img src={state.data.image} alt={state.data.name}/>
       </div>
       <div>
         <h1>{state.data.name}</h1>
