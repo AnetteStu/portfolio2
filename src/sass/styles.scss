@@ -5,9 +5,13 @@
   color: beige;
 }
 
-// body {
-//   height: 100vh;
-// }
+html {
+  background: linear-gradient(180deg, rgb(30, 29, 29), rgb(11, 9, 14));
+  background-repeat: no-repeat;
+  // width: fit-content;
+  min-height: 100vh;
+  // background-size: cover;
+}
 
 #root {
   // height: 100%;
@@ -24,12 +28,15 @@ nav {
     width: 100px;
     display: flex;
     justify-content: center;
-    &:hover {
-      letter-spacing: 2px;
+    &:hover:not(.active) {
+      // letter-spacing: 2px;
+      text-decoration: underline 3px orangered;
+      text-underline-offset: .5em;
     }
     &.active {
       color: #5d5656;
       letter-spacing: 2px;
+      pointer-events: none;
     }
   }
   padding: 1em 0;
@@ -50,6 +57,11 @@ nav {
     a:hover {
       color: tomato;
     }
+    &:not(a) {
+      // Change breadcrumb logic to NavLink
+      color: grey;
+      // pointer-events: none; 
+    }
     &:not(:first-child):before {content: "/ "}
     }
 }
@@ -60,9 +72,9 @@ nav {
   min-height: 100%;
   
 
-  background: linear-gradient(180deg, rgb(30, 29, 29), rgb(11, 9, 14));
-  background-repeat: no-repeat;
-  background-size: cover;
+  // background: linear-gradient(180deg, rgb(30, 29, 29), rgb(11, 9, 14));
+  // background-repeat: no-repeat;
+  // background-size: cover;
 
   ::selection {
     background-color: $primary_color;
@@ -79,6 +91,7 @@ nav {
   }
   img, .headerImage {
     border-radius: 1em;
+    max-width: 100%;
   }
 }
 .portfolio {
@@ -91,12 +104,16 @@ nav {
   flex-wrap: wrap;
 }
 
-.pointer {
-  color: white;
+section {
+  width: min(639px, 100% - 2rem);
+}
+.centerText {
+  display: flex;
+  justify-content: center;
 }
 
-section {
-  max-width: 639px;
+.pointer {
+  color: white;
 }
 
 footer {
@@ -138,7 +155,7 @@ footer ul {
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
-    width: 100%;
+    // width: min(98vh, 100% - 2em);
     justify-content: space-evenly;
 
   }
@@ -155,9 +172,9 @@ footer ul {
       background-repeat: no-repeat;
       background-size: cover;
       object-fit: cover;
-      width: 98vh;
-      max-width: 800px;
-      border-radius: 1em;
+      // width: min(98vh, 100% - 2em);
+      max-width: 100%;
+      border-radius: 1em; 
     }
     
     .projectInfo {
@@ -172,14 +189,14 @@ footer ul {
   transition: .2s ease-in-out;
 }
 
-@media screen and (max-width: 530px) {
-  .projects .projectCard img {
-    max-width: 400px;
-  }
-  .projects .projectCard .projectInfo {
-    flex-direction: column;
-    h4 {
-      display: none;
-    }
-  }
-}
+// @media screen and (max-width: 530px) {
+//   .projects .projectCard img {
+//     max-width: 400px;
+//   }
+//   .projects .projectCard .projectInfo {
+//     flex-direction: column;
+//     h4 {
+//       display: none;
+//     }
+//   }
+// }

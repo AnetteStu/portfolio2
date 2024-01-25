@@ -9,7 +9,7 @@ export default function Navigation() {
         isPending ? "pending" : isActive ? "active" : ""}>Home
       </NavLink>
       <NavLink 
-          to="/projects"
+          to="/projects" end
           className={({isActive, isPending}) =>
           isPending ? "pending" : isActive ? "active" : ""}>Projects
         </NavLink>

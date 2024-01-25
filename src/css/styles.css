@@ -3,6 +3,12 @@
   color: beige;
 }
 
+html {
+  background: linear-gradient(180deg, rgb(30, 29, 29), rgb(11, 9, 14));
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
 #root {
   min-width: min-content;
 }
@@ -20,12 +26,14 @@ nav a {
   display: flex;
   justify-content: center;
 }
-nav a:hover {
-  letter-spacing: 2px;
+nav a:hover:not(.active) {
+  text-decoration: underline 3px orangered;
+  text-underline-offset: 0.5em;
 }
 nav a.active {
   color: #5d5656;
   letter-spacing: 2px;
+  pointer-events: none;
 }
 
 .breadcrumb {
@@ -44,6 +52,9 @@ nav a.active {
 .breadcrumb li a:hover {
   color: tomato;
 }
+.breadcrumb li:not(a) {
+  color: grey;
+}
 .breadcrumb li:not(:first-child):before {
   content: "/ ";
 }
@@ -52,9 +63,6 @@ nav a.active {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  background: linear-gradient(180deg, rgb(30, 29, 29), rgb(11, 9, 14));
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 .wrapper ::selection {
   background-color: orangered;
@@ -70,6 +78,7 @@ nav a.active {
 }
 .wrapper img, .wrapper .headerImage {
   border-radius: 1em;
+  max-width: 100%;
 }
 
 .portfolio {
@@ -82,12 +91,17 @@ nav a.active {
   flex-wrap: wrap;
 }
 
-.pointer {
-  color: white;
+section {
+  width: min(639px, 100% - 2rem);
 }
 
-section {
-  max-width: 639px;
+.centerText {
+  display: flex;
+  justify-content: center;
+}
+
+.pointer {
+  color: white;
 }
 
 footer {
@@ -130,7 +144,6 @@ footer ul li:last-child {
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
-  width: 100%;
   justify-content: space-evenly;
 }
 .projects .projectCard {
@@ -145,8 +158,7 @@ footer ul li:last-child {
   background-repeat: no-repeat;
   background-size: cover;
   object-fit: cover;
-  width: 98vh;
-  max-width: 800px;
+  max-width: 100%;
   border-radius: 1em;
 }
 .projects .projectCard .projectInfo {
@@ -156,16 +168,4 @@ footer ul li:last-child {
 }
 .projects .projectCard .projectInfo h3, .projects .projectCard .projectInfo h4 {
   color: beige;
-}
-
-@media screen and (max-width: 530px) {
-  .projects .projectCard img {
-    max-width: 400px;
-  }
-  .projects .projectCard .projectInfo {
-    flex-direction: column;
-  }
-  .projects .projectCard .projectInfo h4 {
-    display: none;
-  }
 }/*# sourceMappingURL=styles.css.map */

@@ -30,10 +30,11 @@ export default function Breadcrumb() {
       ? 
       <li>
           <NavLink
-          to={`/${splitPath[1]}`}
+          to={`/${splitPath[1]}`} end
           className={({isActive, isPending}) =>
           isPending ? "pending" : isActive ? "active" : ""}
-          > {splitPath[1]}
+          > 
+          {splitPath[1]}
           </NavLink>
         </li>
        : 
