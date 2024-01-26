@@ -125,7 +125,7 @@ footer ul {
   padding: 0;
 }
 footer ul li {
-  color: white;
+  color: rgb(113, 113, 113);
   display: flex;
 }
 

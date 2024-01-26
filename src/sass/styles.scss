@@ -136,7 +136,7 @@ footer ul {
   justify-content: space-between;
   padding: 0;
   li {
-    color: white;
+    color: rgb(113, 113, 113);
     display: flex;
     // &:last-child {
     //   margin-right: 2em;
@@ -212,14 +212,22 @@ footer ul {
   justify-content: center;
 }
 
-// @media screen and (max-width: 530px) {
-//   .projects .projectCard img {
-//     max-width: 400px;
-//   }
-//   .projects .projectCard .projectInfo {
-//     flex-direction: column;
-//     h4 {
-//       display: none;
-//     }
-//   }
-// }
+@media screen and (max-width: 530px) {
+  
+  // .row > h4:first-of-type {
+  //   width: fill;
+  //   display: flex;
+  //   justify-content: flex-end;
+  // }
+
+  
+  // .projects .projectCard img {
+  //   max-width: 400px;
+  // }
+  // .projects .projectCard .projectInfo {
+  //   flex-direction: column;
+  //   h4 {
+  //     display: none;
+  //   }
+  // }
+}
