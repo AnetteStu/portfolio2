@@ -2,6 +2,8 @@ import React from 'react'
 
 export default function Picture() {
   return (
-    <img src='/img/mesmol_smoller.png' className='headerImage' alt='its a me'/>
+    <div className='center'>
+      <img src='/img/mesmol_smoller.png' className='headerImage' alt='its a me'/>
+    </div>
   )
 }

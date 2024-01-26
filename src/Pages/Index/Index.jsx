@@ -10,7 +10,9 @@ export default function Index() {
         <p className="centerText">
           My name is Anette, and I'd love to show you around! <a href="#about" className="pointer"><i className="fa-solid fa-arrow-down-long fa-beat fa-xl"></i></a>
         </p>
-        <Picture/>      
+        <Picture/>   
+      </section>
+      <section>   
         <h3 id="about">A little bit about me</h3>
         <p>
           I'm a lady from the icy cold (mostly) land of Norway, I was born in the summer of 1998 and has dedicated my life to technology ever since I can remember!

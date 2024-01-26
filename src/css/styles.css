@@ -92,6 +92,9 @@ nav a.active {
 }
 
 section {
+  width: min(1200px, 100% - 2rem);
+}
+section.small {
   width: min(639px, 100% - 2rem);
 }
 
@@ -106,25 +109,24 @@ section {
 
 footer {
   display: flex;
+  justify-content: center;
   flex: 0 1 auto;
   width: 100%;
   min-height: 5vh;
 }
 
 footer ul {
+  width: min(1200px, 100% - 2rem);
   list-style-type: none;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: stretch;
   justify-content: space-between;
+  padding: 0;
 }
 footer ul li {
   color: white;
   display: flex;
-}
-footer ul li:last-child {
-  margin-right: 2em;
 }
 
 .projects {
@@ -150,6 +152,7 @@ footer ul li:last-child {
   display: flex;
   flex-direction: column;
   transition: 0.2s ease-in-out;
+  width: min(550px, 100% - 2em);
 }
 .projects .projectCard:hover {
   transform: scale(102%);
@@ -161,11 +164,20 @@ footer ul li:last-child {
   max-width: 100%;
   border-radius: 1em;
 }
-.projects .projectCard .projectInfo {
+.projects .projectCard a {
+  text-decoration: none;
+}
+.projects .projectCard .projectInfo h3, .projects .projectCard .projectInfo h4 {
+  color: beige;
+}
+
+.row {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.projects .projectCard .projectInfo h3, .projects .projectCard .projectInfo h4 {
-  color: beige;
+
+.center {
+  display: flex;
+  justify-content: center;
 }/*# sourceMappingURL=styles.css.map */
