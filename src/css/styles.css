@@ -153,6 +153,7 @@ footer ul li {
   flex-direction: column;
   transition: 0.2s ease-in-out;
   width: min(550px, 100% - 2em);
+  margin-top: 1em;
 }
 .projects .projectCard:hover {
   transform: scale(102%);
@@ -174,7 +175,12 @@ footer ul li {
 .row {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
+}
+.row > h3, .row h4 {
+  margin: 0 0 0 0;
 }
 
 .center {
