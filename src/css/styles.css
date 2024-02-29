@@ -7,6 +7,7 @@ html {
   background: linear-gradient(180deg, rgb(30, 29, 29), rgb(11, 9, 14));
   background-repeat: no-repeat;
   min-height: 100vh;
+  color-scheme: dark;
 }
 
 #root {
@@ -16,13 +17,14 @@ html {
 nav {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   padding: 1em 0;
 }
 nav a {
   color: orangered;
   text-decoration: none;
   transition: 0.2s ease-in-out;
-  width: 100px;
+  width: 120px;
   display: flex;
   justify-content: center;
 }
@@ -78,7 +80,7 @@ nav a.active {
 }
 .wrapper img, .wrapper .headerImage {
   border-radius: 1em;
-  max-width: 100%;
+  max-width: 72%;
 }
 
 .portfolio {
@@ -181,6 +183,14 @@ footer ul li {
 }
 .row > h3, .row h4 {
   margin: 0 0 0 0;
+}
+
+.info_row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.info_row .info_text {
+  width: min(500px, 70%, 70vh);
 }
 
 .center {

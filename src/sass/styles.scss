@@ -8,28 +8,25 @@
 html {
   background: linear-gradient(180deg, rgb(30, 29, 29), rgb(11, 9, 14));
   background-repeat: no-repeat;
-  // width: fit-content;
   min-height: 100vh;
-  // background-size: cover;
+
+  color-scheme: dark
 }
 
-#root {
-  // height: 100%;
-  min-width: min-content;
-}
+#root {min-width: min-content;}
 
 nav {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   a {
     color: $primary_color;
     text-decoration: none;
     transition: .2s ease-in-out;
-    width: 100px;
+    width: 120px;
     display: flex;
     justify-content: center;
     &:hover:not(.active) {
-      // letter-spacing: 2px;
       text-decoration: underline 3px orangered;
       text-underline-offset: .5em;
     }
@@ -57,11 +54,7 @@ nav {
     a:hover {
       color: tomato;
     }
-    &:not(a) {
-      // Change breadcrumb logic to NavLink
-      color: grey;
-      // pointer-events: none; 
-    }
+    &:not(a) {color: grey;}
     &:not(:first-child):before {content: "/ "}
     }
 }
@@ -70,11 +63,6 @@ nav {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  
-
-  // background: linear-gradient(180deg, rgb(30, 29, 29), rgb(11, 9, 14));
-  // background-repeat: no-repeat;
-  // background-size: cover;
 
   ::selection {
     background-color: $primary_color;
@@ -83,7 +71,6 @@ nav {
   > div:not(.project) {
     min-height: 89.2vh;
     display: flex;
-    // justify-content: center;
     flex-wrap: wrap;
     flex-direction: column;
     flex: 1 0 auto;
@@ -91,7 +78,7 @@ nav {
   }
   img, .headerImage {
     border-radius: 1em;
-    max-width: 100%;
+    max-width: 72%;
   }
 }
 .portfolio {
@@ -138,9 +125,6 @@ footer ul {
   li {
     color: rgb(113, 113, 113);
     display: flex;
-    // &:last-child {
-    //   margin-right: 2em;
-    // }
   }
 }
 
@@ -160,7 +144,6 @@ footer ul {
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
-    // width: min(98vh, 100% - 2em);
     justify-content: space-evenly;
 
   }
@@ -205,6 +188,14 @@ footer ul {
   
   > h3, h4 {
     margin: 0 0 0 0;
+  }
+}
+.info_row {
+  display: flex;
+  flex-wrap: wrap;
+
+  .info_text {
+    width: min(500px, 70%, 70vh);
   }
 }
 .center {

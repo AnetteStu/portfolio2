@@ -13,10 +13,15 @@ export default function Navigation() {
           className={({isActive, isPending}) =>
           isPending ? "pending" : isActive ? "active" : ""}>Projects
         </NavLink>
+        <NavLink 
+        to="/about"
+        className={({isActive, isPending}) =>
+        isPending ? "pending" : isActive ? "active" : ""}>About me
+      </NavLink>
       <NavLink 
         to="/contact"
         className={({isActive, isPending}) =>
-        isPending ? "pending" : isActive ? "active" : ""}>Contact
+        isPending ? "pending" : isActive ? "active" : ""}>Get in touch
       </NavLink>
     </nav>
   )
