@@ -28,14 +28,14 @@ export default function About() {
         <CertificationComponent 
           name="HTML"
           description="Completed the HTML Exam from W3Schools"
-          image={process.env.PUBLIC_URL + "certifications/html/html_cert.png"}
+          image={process.env.PUBLIC_URL + "certifications/html/html_cert.jpg"}
           size="medium"
           credit="https://verify.w3schools.com/1N5ANMYCGZ"
         />
         <CertificationComponent 
           name="JavaScript"
           description="Completed the JavaScript Exam from W3Schools"
-          image={process.env.PUBLIC_URL + "certifications/js/js_cert.png"}
+          image={process.env.PUBLIC_URL + "certifications/js/js_cert.jpg"}
           size="medium"
           credit="https://verify.w3schools.com/1N36QUNWGH"
         />
