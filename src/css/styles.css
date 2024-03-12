@@ -23,7 +23,7 @@ nav {
 nav a {
   color: orangered;
   text-decoration: none;
-  transition: 0.2s ease-in-out;
+  transition: 0.2s all ease-in-out;
   width: 120px;
   display: flex;
   justify-content: center;
@@ -49,7 +49,7 @@ nav a.active {
 }
 .breadcrumb li a {
   text-decoration: none;
-  transition: 0.2s ease-in-out;
+  transition: 0.2s all ease-in-out;
 }
 .breadcrumb li a:hover {
   color: tomato;
@@ -134,7 +134,7 @@ footer ul li {
 .projects {
   display: flex;
   align-items: center;
-  transition: 0.2s ease-in-out;
+  transition: 0.2s all ease-in-out;
 }
 .projects > div {
   display: flex;
@@ -153,7 +153,7 @@ footer ul li {
 .projects .projectCard {
   display: flex;
   flex-direction: column;
-  transition: 0.2s ease-in-out;
+  transition: 0.2s all ease-in-out;
   width: min(550px, 100% - 2em);
   margin-top: 1em;
 }
@@ -172,6 +172,13 @@ footer ul li {
 }
 .projects .projectCard .projectInfo h3, .projects .projectCard .projectInfo h4 {
   color: beige;
+}
+
+.iconLink, i {
+  transition: 0.2s all ease-in-out;
+}
+.iconLink :hover, i :hover {
+  color: orangered;
 }
 
 .row {

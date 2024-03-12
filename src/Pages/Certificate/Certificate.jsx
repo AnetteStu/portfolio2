@@ -3,7 +3,7 @@ import Breadcrumb from "../../Components/Breadcrumb/Breadcrumb";
 
 export default function Certificate() {
   const {state} = useLocation();
-  document.title= state.data.name
+  document.title= `Certificate | ${state.data.name}`
   return (
     <div>
       <Breadcrumb/>
