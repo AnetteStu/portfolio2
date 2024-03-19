@@ -80,7 +80,8 @@ nav a.active {
 }
 .wrapper img, .wrapper .headerImage {
   border-radius: 1em;
-  max-width: 72%;
+  object-fit: cover;
+  height: 100%;
 }
 
 .portfolio {
@@ -172,6 +173,15 @@ footer ul li {
 }
 .projects .projectCard .projectInfo h3, .projects .projectCard .projectInfo h4 {
   color: beige;
+}
+
+.certificateCard {
+  display: flex;
+  justify-content: center;
+  transition: 0.2s all ease-in-out;
+}
+.certificateCard:hover {
+  transform: scale(102%);
 }
 
 .iconLink, i {

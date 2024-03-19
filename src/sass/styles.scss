@@ -78,7 +78,8 @@ nav {
   }
   img, .headerImage {
     border-radius: 1em;
-    max-width: 72%;
+    object-fit: cover;
+    height: 100%;
   }
 }
 .portfolio {
@@ -136,7 +137,6 @@ footer ul {
     justify-content: center;
     
     a {text-decoration: none;}
-    
   }
 
   .projectcontainer{
@@ -145,8 +145,8 @@ footer ul {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-
   }
+
   .projectCard {
     display: flex;
     flex-direction: column;
@@ -177,6 +177,17 @@ footer ul {
     }
   }
   transition: $default_transition;
+}
+
+.certificateCard {
+  // @extend .projects, .projectCard;
+  display: flex;
+  justify-content: center;
+  transition: $default_transition;
+
+  &:hover {
+    transform: scale(102%);
+  }
 }
 
 .iconLink, i {

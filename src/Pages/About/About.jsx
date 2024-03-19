@@ -5,21 +5,21 @@ export default function About() {
   return (
     <div>
       <Breadcrumb/>
-      <div className="row">
-
-        <CertificationComponent
-          name="Microsoft Fundementals"
-          description="Certification of completed exam for the Microsoft Fundamentals"
-          image={process.env.PUBLIC_URL + "certifications/ms-900/ms-900_cert.png"}
-          size="medium"
-          credit="https://learn.microsoft.com/en-gb/users/anettedahle-9144/credentials/69b9d7db1ac59417"
-        />
+      <h3>IT achievements</h3>
+      <div className="">
         <CertificationComponent
           name="Cisco Networking Fundementals"
           description="Certification of completed exam for the Cisco Networking Exam, free edition"
           image={process.env.PUBLIC_URL + "certifications/cisco/cisco-network_cert.png"}
-          size="medium"
+          size="large"
           credit="https://www.credly.com/badges/3b5f2aba-f731-46ca-8499-38b9c0d11612/public_url"
+        />
+        <CertificationComponent
+          name="Microsoft Fundamentals"
+          description="Certification of completed exam for the Microsoft Fundamentals"
+          image={process.env.PUBLIC_URL + "certifications/ms-900/ms-900_cert.png"}
+          size="large"
+          credit="https://learn.microsoft.com/en-gb/users/anettedahle-9144/credentials/69b9d7db1ac59417"
         />
       </div>
 
