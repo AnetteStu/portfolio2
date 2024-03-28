@@ -1,4 +1,4 @@
-.achievements {
+.achievements, a {
   width: 100%;
   display: grid;
   row-gap: 20px;
@@ -58,4 +58,29 @@
   &:hover {
     text-decoration: underline;
   }
+}
+
+@media (width < 500px) {
+
+  .achievements {
+    display: grid;
+    // grid-area: span 20;
+  }
+  .certificate {
+    height: 200px;
+    grid-row: 1/ span 17;
+  }
+  .certificate__info {
+    flex-direction: column;
+    align-items: center
+  }
+
+  .certificate__href_credit, .certificate__description {
+    padding-left: 0!important;
+    margin: 0!important;
+
+    text-align: center;
+  }
+
+
 }
