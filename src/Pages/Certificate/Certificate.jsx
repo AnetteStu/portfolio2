@@ -11,8 +11,7 @@ export default function Certificate() {
         <h3>{state.data.name}</h3>
         <p>{state.data.description}</p>
         <img src={`/${state.data.image}`} alt={state.data.name}/>
-        <a href={state.data.credit}>Credit</a>
-         
+        <a href={state.data.credit}>Credit</a>         
       </section>
     </div>
   )

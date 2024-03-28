@@ -23,15 +23,15 @@ export default function Index() {
               I have a burning passion for technologies of all sorts and love to tinker with physical machines as well as the magic that makes them work! 
             </p>
             <p>
-              Besides computers and programing, I'm also a fantasy artist in the digital domain and an animal-lover at heart. I've also recently discovered a deep fascination in the human psycology.  
+              Besides computers and programing, I'm also a fantasy artist in the digital domain and an animal-lover at heart. I've also recently discovered a deep fascination in the human phycology.  
               Needless to say, I'm what you can call a jack-of-all-trades. 
             </p>
           </div>   
         <h3 id="career">Deeper dive into my professional career</h3>
         <p>
           
-        I've aquired a wide spectrum of knowledge around software and hardware over the years, I have worked with AV equipment, some networking, but most of my time has been spent with windows computers. 
-          Recently I got the oportunity to test my skills in a tech company, which thought me a lot about Azure, with it's capabilities for on-prem, cloud and hybrid enviroments. I also got to administer tenants and end-users.
+        I've acquire a wide spectrum of knowledge around software and hardware over the years, I have worked with AV equipment, some networking, but most of my time has been spent with windows computers. 
+          Recently I got the opportunity to test my skills in a tech company, which thought me a lot about Azure, with it's capabilities for on-prem, cloud and hybrid environments. I also got to administer tenants and end-users.
           I've had a few jobs which revolved around computers, my takeaway from this is that I really love working with customers and ensuring that their needs are met. 
         </p>
         <p>

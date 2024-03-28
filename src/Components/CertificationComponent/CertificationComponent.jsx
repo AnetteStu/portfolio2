@@ -27,9 +27,7 @@ export default function CertificationComponent(data) {
 }
 
 
-
-
-
+// TODO: Delete this 
 // let size = 700
 // if(data.size === "small") {size=300}
 // if(data.size === "medium") {size=400}
