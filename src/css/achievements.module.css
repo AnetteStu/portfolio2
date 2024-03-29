@@ -1,9 +1,9 @@
-.achievements, a {
+.achievements {
   width: 100%;
   display: grid;
   row-gap: 20px;
 }
-.achievements a, a a {
+.achievements a {
   text-decoration: none;
 }
 
