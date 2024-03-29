@@ -1,5 +1,7 @@
 import Picture from "../../Components/Picture/Picture";
 
+// TODO: Add cool "come into view" effect on headers
+
 export default function Index() {
   document.title="Anette Dahle"
   return (
