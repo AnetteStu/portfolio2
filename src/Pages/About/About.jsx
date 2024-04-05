@@ -46,7 +46,7 @@ export default function About() {
       <section>
         <div className={style.achievements}>
           <CertificationComponent
-            name="Cisco Networking Fundementals"
+            name="Cisco Networking Fundamentals"
             description="Certification of completed exam for the Cisco Networking Exam, free edition"
             image={process.env.PUBLIC_URL + "certifications/cisco/cisco-network_cert.png"}
             credit="https://www.credly.com/badges/3b5f2aba-f731-46ca-8499-38b9c0d11612/public_url"
