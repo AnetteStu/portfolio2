@@ -64,11 +64,10 @@
 
   .achievements {
     display: grid;
-    // grid-area: span 20;
   }
   .certificate {
     height: 200px;
-    grid-row: 1/ span 17;
+    display: contents;
   }
   .certificate__info {
     flex-direction: column;
@@ -80,6 +79,7 @@
     margin: 0!important;
 
     text-align: center;
+    width: inherit;
   }
 
 

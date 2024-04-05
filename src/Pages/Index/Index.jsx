@@ -15,7 +15,7 @@ export default function Index() {
       </section>
       <section>
         <div className="info_text">
-            <h3 id="about">A little bit about me</h3>
+            <h3 id="career">A little bit about me</h3>
             <p>
               I'm a lady from the icy cold (mostly) land of Norway, I was born in the summer of 1998 and has dedicated my life to technology ever since I can remember!
               My mother tongue is norwegian and my secondary language is english, I'm proficient in both. 

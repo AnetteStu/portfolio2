@@ -10,8 +10,13 @@ html {
   color-scheme: dark;
 }
 
+body {
+  height: fit-content;
+}
+
 #root {
   min-width: min-content;
+  height: fit-content;
 }
 
 nav {

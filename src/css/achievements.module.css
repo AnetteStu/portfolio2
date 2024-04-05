@@ -61,7 +61,7 @@
   }
   .certificate {
     height: 200px;
-    grid-row: 1/span 17;
+    display: contents;
   }
   .certificate__info {
     flex-direction: column;
@@ -71,5 +71,6 @@
     padding-left: 0 !important;
     margin: 0 !important;
     text-align: center;
+    width: inherit;
   }
 }/*# sourceMappingURL=achievements.module.css.map */
