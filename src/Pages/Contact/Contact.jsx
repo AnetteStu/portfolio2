@@ -11,7 +11,7 @@ export default function Contact() {
         {/* <span>Send me an <a href="mailto:anette.dahle@hotmail.com">email</a>!</span> */}
         {/* <ContactForm/> */}
         <p>
-          Not available at this time, you may reach out to me trough <space/>
+          Not available at this time, you may reach out to me trough
           <a href="https://www.linkedin.com/in/anette-d/" className="iconLink" title="Reach out to me at LinkedIn!"><i className="fa-brands fa-linkedin-in fa-xl"></i></a>
         </p>
       </section>

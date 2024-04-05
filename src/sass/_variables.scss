@@ -1,2 +1,6 @@
 $primary_color: orangered;
 $default_transition: .2s all ease-in-out;
+
+$mobile_width: 500px;
+
+$dynamic_width: min(500px, 70%, 70vh);

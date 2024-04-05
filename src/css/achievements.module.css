@@ -71,6 +71,8 @@
     padding-left: 0 !important;
     margin: 0 !important;
     text-align: center;
+  }
+  .certificate__href_credit p, .certificate__description p {
     width: inherit;
   }
 }/*# sourceMappingURL=achievements.module.css.map */

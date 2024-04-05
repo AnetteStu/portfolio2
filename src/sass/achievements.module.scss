@@ -1,3 +1,5 @@
+@import "./variables";
+
 .achievements {
   width: 100%;
   display: grid;
@@ -60,7 +62,7 @@
   }
 }
 
-@media (width < 500px) {
+@media (width < $mobile_width) {
 
   .achievements {
     display: grid;
@@ -79,8 +81,7 @@
     margin: 0!important;
 
     text-align: center;
-    width: inherit;
+    
+    & p {width: inherit;}
   }
-
-
 }

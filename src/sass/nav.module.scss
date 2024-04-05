@@ -1,0 +1,35 @@
+@import "./variables";
+
+
+
+.navLinks {
+  display: flex
+}
+
+.navIcon {
+  display: none;
+}
+
+@media (width < $mobile_width) {
+  .navIcon {
+    display: flex;
+    width: $dynamic_width;
+    z-index: 100;
+    padding-top: inherit;
+  }
+  .navLinks {
+    display: none;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    min-height: 100%;
+    flex-direction: column;
+    background: #000000ed;
+    padding-top: 4em;
+    align-items: center;
+  }
+  // body > *:not(.nav) {
+  //   filter: blur(2px);
+  // }
+}

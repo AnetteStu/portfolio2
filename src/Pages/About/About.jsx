@@ -8,7 +8,7 @@ export default function About() {
   return (
     <div>
       <Breadcrumb/>
-      <h3>Certificates</h3>
+      <h2>Certificates</h2>
       <section>
         <div className={style.achievements}>
           <CertificationComponent

@@ -16,15 +16,11 @@ body {
   height: fit-content;
 }
 
-#root {
-  min-width: min-content;
-  height: fit-content;
-}
-
 nav {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  padding: 1em 0;
   a {
     color: $primary_color;
     text-decoration: none;
@@ -42,7 +38,11 @@ nav {
       pointer-events: none;
     }
   }
-  padding: 1em 0;
+}
+
+#root {
+  min-width: min-content;
+  height: fit-content;
 }
 
 .breadcrumb {
@@ -219,7 +219,7 @@ footer ul {
   flex-wrap: wrap;
 
   .info_text {
-    width: min(500px, 70%, 70vh);
+    width: $dynamic_width;
   }
 }
 .center {
@@ -227,8 +227,7 @@ footer ul {
   justify-content: center;
 }
 
-@media screen and (max-width: 530px) {
-  
+@media (width < $mobile_width) {
   // .row > h4:first-of-type {
   //   width: fill;
   //   display: flex;
