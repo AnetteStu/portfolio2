@@ -1,11 +1,5 @@
 @import "./variables";
 
-
-
-.navLinks {
-  display: flex
-}
-
 .navIcon {
   display: none;
 }
@@ -18,7 +12,7 @@
     padding-top: inherit;
   }
   .navLinks {
-    display: none;
+    display: flex;
     width: 100%;
     position: absolute;
     left: 0;
@@ -28,8 +22,20 @@
     background: #000000ed;
     padding-top: 4em;
     align-items: center;
+    & a {
+      margin: 1em 0;
+    }
   }
   // body > *:not(.nav) {
   //   filter: blur(2px);
   // }
+}
+
+@media (width > $mobile_width) {
+  .navLinks {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
 }

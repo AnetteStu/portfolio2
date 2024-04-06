@@ -1,14 +1,33 @@
-import { useState } from "react"
 import style from "../../css/nav.module.css"
-export default function Hamburger() {
-  const [hamburgerOpen, setHamburgerOpen] = useState(false)
-  const toggleHamburger = () => {
-    setHamburgerOpen(!hamburgerOpen)
-    console.log(hamburgerOpen);
-  }
+import { NavLink } from "react-router-dom"
+export default function Hamburger(props) {
+  console.log(props);
   return (
-    <div className={style.navIcon} onClick={toggleHamburger}>
-      <i className={`fa-solid fa-bars fa-xl `}></i>
-    </div>
+    <>
+      {props.state ? 
+        <div className={style.navLinks }>
+        <NavLink 
+          to="/"
+          className={({isActive, isPending}) =>
+          isPending ? "pending" : isActive ? "active" : ""}>Home
+        </NavLink>
+        <NavLink 
+            to="/projects" end
+            className={({isActive, isPending}) =>
+            isPending ? "pending" : isActive ? "active" : ""}>Projects
+          </NavLink>
+          <NavLink 
+          to="/about"
+          className={({isActive, isPending}) =>
+          isPending ? "pending" : isActive ? "active" : ""}>About me
+        </NavLink>
+        <NavLink 
+          to="/contact"
+          className={({isActive, isPending}) =>
+          isPending ? "pending" : isActive ? "active" : ""}>Get in touch
+        </NavLink>
+      </div>
+      : ""}
+    </>
   )
 }
