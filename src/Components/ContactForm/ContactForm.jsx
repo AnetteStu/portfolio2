@@ -1,26 +1,42 @@
 export default function ContactForm() {
-  return (
-    <div>
-      <form name="contact" data-netlify="true" netlify-honeypot="bot-field" hidden>
-        <input type="text" name="name" />
-        <input type="email" name="email" />
-        <textarea name="message"></textarea>
-      </form>
-      <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
-          <input type="hidden" name="form-name" value="contact" />
-          <p>
-            <label>Your Name: <input type="text" name="name"/></label>
-          </p>
-          <p>
-            <label>Your Email: <input type="email" name="email"/></label>
-          </p>
-          <p>
-            <label>Message: <textarea name="message"></textarea></label>
-          </p>
-          <p>
-            <button type="submit">Send</button>
-          </p>
-        </form>
-    </div>
-  )
+  async function handleSubmit(e) {
+      e.preventDefault();
+      const response = await fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          headers: {
+              "Content-Type": "application/json",
+              Accept: "application/json",
+          },
+          body: JSON.stringify({
+              access_key: process.env.REACT_APP_ACCESS_KEY,
+              name: e.target.name.value,
+              email: e.target.email.value,
+              message: e.target.message.value,
+          }),
+      });
+      const result = await response.json();
+      if (result.success) {
+          console.log(result);
+      }
+  }
+
+return (
+  <>
+    <form onSubmit={handleSubmit}>
+        <div>
+            <label htmlFor="name">Name</label>
+            <input type="text" name="name" required placeholder="Your name" />
+        </div>
+        <div>
+            <label htmlFor="email">Email</label>
+            <input type="email" name="email" required placeholder="email@example.com" />
+        </div>
+        <div>
+            <label htmlFor="message">Message</label>
+            <textarea name="message" required rows="3" placeholder="Enter Message"></textarea>
+        </div>
+        <button type="submit">Submit Form</button>
+    </form>
+  </>
+);
 }

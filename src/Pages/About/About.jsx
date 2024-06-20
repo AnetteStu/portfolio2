@@ -1,6 +1,6 @@
 import Breadcrumb from "../../Components/Breadcrumb/Breadcrumb";
 import CertificationComponent from "../../Components/CertificationComponent/CertificationComponent";
-import style from '../../css/achievements.module.css'
+import style from '../../css/achievements.module.css';
 
 
 export default function About() {

@@ -1,3 +1,32 @@
 .landing {
   display: flex;
+}
+
+.landing_page {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.landing_image {
+  transition: 0.2s all ease-in-out;
+}
+.landing_image img {
+  max-width: 500px;
+}
+
+.landing_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.landing_info a {
+  text-decoration: none;
+}
+
+.landing_name {
+  font-family: "Mrs Saint Delafield", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 5em;
 }/*# sourceMappingURL=landing.module.css.map */

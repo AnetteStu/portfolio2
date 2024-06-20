@@ -1,7 +1,6 @@
 import style from "../../css/nav.module.css"
 import { NavLink } from "react-router-dom"
 export default function Hamburger(props) {
-  console.log(props);
   return (
     <>
       {props.state ? 
