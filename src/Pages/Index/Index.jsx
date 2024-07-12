@@ -10,13 +10,13 @@ export default function Index() {
           <div className={style.landing_info}>
             <div>
               <span className={style.landing_name}>Anette Dahle</span>
-              <p>rjherpoh orjkgoper ogihHER HJ P </p>
-              <p>regiokhmnj</p>
+              <h2>IT consultant & Front-End Developer</h2>
+              <p>Employee at Nor IT AS at day, developer at night</p>
             </div>
             <Link to="/about">Want to read more about me?</Link>
           </div>
           <div className={style.landing_image}>
-            <img src={process.env.PUBLIC_URL + "img/mesmol_smoller.png"} alt="Anette Dahle"/>
+            <img src={process.env.PUBLIC_URL + "img/mesmol_smoller.png"} alt="Outdated picture of Anette Dahle" title="Outdated picture of Anette Dahle"/>
           </div>
         </div>
       </section>

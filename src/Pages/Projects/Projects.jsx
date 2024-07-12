@@ -16,14 +16,16 @@ export default function Projects() {
             image="https://i.gyazo.com/3d4ad2f0e2861683327f9c9ac4136ff0.jpg"
             thoughts="Definetly my biggest project while studying, this project connects to an API provided by the school, that students could log into and manage. You're able to make an account and book any venue.
             Today there's many changes I would implement though"
+            languages="React, Bootstrap"
           />
           <ProjectComponent 
             name="eCommerce" 
-            description="JavaScript Framework Course Assignment" 
+            description="Course Assignment" 
             repo="https://github.com/AnetteStu/Javascript_Frameworks_CA/tree/prototype" 
             demo="https://kadsca.netlify.app/" 
             image="https://i.gyazo.com/7fb1e2772672ac8564e10f889b35174b.jpg"
             thoughts="I experienced a lot with styling and element interactions in this project."
+            languages="React, JavaScript"
           />
         </section>
       </div>

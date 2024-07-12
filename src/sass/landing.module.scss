@@ -6,7 +6,8 @@
 .landing_page {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .landing_image {
@@ -30,4 +31,12 @@
   font-weight: 400;
   font-style: normal;
   font-size: 5em;
+}
+
+@media (width > 867px) {
+
+  .landing_page {
+    justify-content: space-around;
+  }
+
 }

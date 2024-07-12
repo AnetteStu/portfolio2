@@ -9,6 +9,7 @@ import Projects from "./Pages/Projects/Projects";
 import Project from "./Pages/Project/Project";
 import About from "./Pages/About/About";
 import Certificate from "./Pages/Certificate/Certificate";
+import ContactSuccess from "./Pages/ContactSuccess/ContactSuccess";
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Route path="/" element={<Layout />}>
         <Route index element={<Index />} />
         <Route path="contact" element={<Contact />} />
+        <Route path="contactsuccess" element={<ContactSuccess />} />
         <Route path="about" element={<About />} />
         <Route path="projects" element={<Projects />} />
         <Route path="projects/:id" element={<Project />} />

@@ -37,7 +37,7 @@ export default function About() {
           />
         </div>
       </section>
-      <section>
+      {/* <section>
         <div className="info_text">
             <h3 id="career">A little bit about me</h3>
             <p>
@@ -71,7 +71,7 @@ export default function About() {
         <p> 
           I love building computers and maintaining them
         </p>
-      </section>
+      </section> */}
     </div>
   )
 }

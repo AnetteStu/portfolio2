@@ -9,15 +9,18 @@ export default function Project() {
       <Breadcrumb/>
       <section className="wide">
         <div className="">
-          <img src={state.data.image} alt={state.data.name}/>
+          <a href={state.data.demo}>
+            <img src={state.data.image} alt={state.data.name}/>
+          </a>
           <div className="row">
-            <h3>{state.data.name}</h3>
+            {/* <h3>{state.data.name}</h3> */}
             {state.data.description}
           </div>
           <div className="row">
             <a href={state.data.demo}>Demo</a>
             <a href={state.data.repo}>Repo</a>
           </div>
+          <p><b>Main focus:</b> {state.data.languages}</p>
           <p>{state.data.thoughts}</p>
         </div>
       </section>

@@ -1,0 +1,31 @@
+.form {
+  caret-color: hsl(16, 100%, 50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form div {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.form div input, .form div textarea {
+  border: 0;
+  padding: 4px 2px;
+  border-radius: 5px;
+}
+.form div textarea {
+  margin-bottom: 2em;
+}
+.form div textarea:focus-visible, .form div input:focus-visible {
+  outline: black;
+  border-radius: 3px;
+}
+.form div button {
+  background-color: hsl(16, 100%, 50%);
+  border: none;
+  padding: 5px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: larger;
+}/*# sourceMappingURL=form.module.css.map */
