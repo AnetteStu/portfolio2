@@ -220,4 +220,15 @@ footer ul li {
 .center {
   display: flex;
   justify-content: center;
+}
+
+button {
+  background-color: hsl(16, 100%, 50%);
+  border: 0;
+  padding: 1em;
+  border-radius: 5px;
+}
+button a {
+  text-decoration: none;
+  color: black;
 }/*# sourceMappingURL=styles.css.map */

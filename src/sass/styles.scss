@@ -229,6 +229,17 @@ footer ul {
   justify-content: center;
 }
 
+button {
+  background-color: $primary_color;
+  border: 0;
+  padding: 1em;
+  border-radius: 5px;
+  & a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
 @media (width < $mobile_width) {
   // .row > h4:first-of-type {
   //   width: fill;
